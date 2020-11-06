@@ -1,4 +1,4 @@
-@media screen and (min-width: 920px) and (max-width: 1500px){
+@media screen and (min-width: 921px) and (max-width: 1500px){
 body {
     margin: 0;
     padding: 0;
@@ -43,7 +43,7 @@ header{
 a.nav-content{
     text-decoration: none;
     font-size: 20px;
-    
+
 }
 .book-now{
     border: none;
@@ -160,22 +160,27 @@ a.book-now:hover,a.book-now:active{
     color: #212529;
 }
 .welcome-heading{   
-   display: flex;                      
+                  
    font-size: 32px;
    margin-bottom:10px;
    text-transform: uppercase;
+   text-align: center;
+   
 }
 .welcome-text{
   display: flex;
+ 
   font-size: 16px;
   font-family: 'Maven Pro', sans-serif;
   text-align: center !important;
 }
 .home-grid-container{
-    margin: 0 20px;
+    
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(4,minmax(200px,1fr));
     grid-auto-rows: minmax(100px, auto);
     position: relative;
 }
@@ -184,7 +189,6 @@ a.book-now:hover,a.book-now:active{
    /* background-color: #e2e2e275;*/
     box-shadow: 5px 5px #ececec;
     border-radius: 8px;
-    
 }
 .grid-image{
     position: absolute;
@@ -238,21 +242,27 @@ a.link:hover,a.link:active{
 }
 .testimonial-container{
     margin-top: 0px;
+    display: flex;
+    align-items: center;
     flex-direction: column;
     margin-bottom: 100px;
+    margin-top: 50px;
     height: 150px;
 }
 .testimonial-container h2{
    border-top: 1px solid black;
+   font-family: 'Quattrocento', serif;
+   font-size: 32px;
    padding-top: 20px;
+   margin-bottom:10px;
+   width: max-content;
+   text-transform: uppercase;
 }
 section .comments{
     position: relative;
     display: flex;
-    max-width: 900px;
-    min-width: 600px;
+    width: 75%;
     height: max-content;
-    flex: 1;
     font-family: 'Maven Pro', sans-serif;
     font-size: 16px;
     text-align: center;
@@ -297,7 +307,7 @@ section .comments{
 }
 
 /*---tablet---*/
-@media screen and (min-width: 325px) and (max-width: 920px){
+@media screen and (min-width: 561px) and (max-width: 920px){
     body {
         margin: 0;
         padding: 0;
@@ -352,8 +362,8 @@ section .comments{
     }
     .book-now{
         border: none;
-        font-size: 18px;
-        padding: 0.7rem 0.7rem;
+        font-size: 20px;
+        padding: 0.9rem 0.9rem;
         text-align: center;
         text-decoration: none;
         color:white ;
@@ -468,10 +478,12 @@ section .comments{
         color: #212529;
     }
     .welcome-heading{   
-       display: flex;                      
+                            
        font-size: 25px;
        margin-bottom:10px;
+       text-align: center;
        text-transform: uppercase;
+
     }
     .welcome-text{
       display: flex;
@@ -484,7 +496,7 @@ section .comments{
         max-width: 600px;
         display: grid;
         gap: 15px;
-        grid-template-columns: repeat(2,290px);
+        grid-template-columns: repeat(2,minmax(100px,290px));
         grid-auto-rows: minmax(100px, auto);
         position: relative;
         
@@ -547,33 +559,38 @@ section .comments{
       
     }
     .testimonial-container{
-        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
-        margin-bottom: 100px;
+        margin-top: 0px; 
+        margin-bottom: 200px;
         height: 150px;
     }
     .testimonial-container h2{
+
        border-top: 1px solid black;
        padding-top: 20px;
+       font-size: 25px;
+       margin-bottom:10px;
+       width: max-content;
+       text-transform: uppercase;
     }
     section .comments{
         position: relative;
         display: flex;
-        max-width: 900px;
-        min-width: 600px;
+        width: 75%;
         height: max-content;
-        flex: 1;
         font-family: 'Maven Pro', sans-serif;
         font-size: 16px;
         text-align: center;
-        
     }
     .comment{
         position: absolute;
         top: 0;
         left: -300px;
         width: 100%;
-        height: 100%;
+        height: max-content;
         opacity: 0;
     }
     .comment.current{
@@ -587,6 +604,7 @@ section .comments{
         height: 300px;
         background-color: #212529;
         display: flex;
+        flex-wrap: wrap;
     }
     .icon{
         color: #c7934b;
@@ -608,7 +626,7 @@ section .comments{
 
 
     
-@media screen and (min-width: 0px) and (max-width: 320px){
+@media screen and (min-width: 0px) and (max-width: 560px){
         body {
             margin: 0;
             padding: 0;
@@ -668,14 +686,16 @@ section .comments{
         .book-now{
             border: none;
             font-size: 18px;
-            padding: 0.7rem 0.7rem;
+            width: 100%;
+            padding: 0.9rem 0rem 0.9rem;
             text-align: center;
             text-decoration: none;
             color:white ;
-            border-radius: 5px;
+            margin-left: 0px;
+            margin-right: 0px;
             position: fixed;
-            right: 5px;
-            bottom: 5px;
+            right: 0px;
+            bottom: 0px;
             
         }
         a.nav-content:link,a.nav-content:visited{
@@ -694,7 +714,7 @@ section .comments{
             position: relative;
             overflow: hidden;
             width: inherit;
-            height: 300px;  
+            height: 250px;  
         }
         .slide{
             position: absolute;
@@ -714,19 +734,19 @@ section .comments{
         }
         .slide .content{
             position: absolute;
-            bottom: 70px;
+            bottom: 20px;
             left: -300px;
             opacity: 0;
             width: max-content;
             background-color: rgba(255, 255, 255, 0.8);
-            color: #333;
+            color: #333;        
             padding: 0px;
             border-radius: 5px;
 
         }
         .slide .content h1{
-            margin-bottom: 10px;
-            font-size: 20px;
+            margin-bottom: 8px;
+            font-size: 18px;
         }
         .slide.current .content {
             font-family: 'Roberto',sans-serif;
@@ -749,7 +769,7 @@ section .comments{
             background-color: #caa675;
             color: #fff;
             cursor: pointer;
-            padding: 7px 11px;
+            padding: 7px 9px;
             border-radius: 50%;
             outline: none;
         }
@@ -781,17 +801,20 @@ section .comments{
         }  
         .welcome-container{
             font-family: 'Quattrocento', serif;
-            padding: 48px 0;
+            padding: 20px 0;
             color: #212529;
+            
         }
-        .welcome-heading{   
-           display: flex;                      
-           font-size: 16px;
+        .welcome-heading{                      
+           font-size: 14px;
            margin-bottom:10px;
            text-transform: uppercase;
+           text-align: center !important;
         }
         .welcome-text{
           display: flex;
+          width: 90%;
+          margin: 0 auto;
           font-size: 10px;
           font-family: 'Maven Pro', sans-serif;
           text-align: center !important;
@@ -801,7 +824,7 @@ section .comments{
             max-width: 300px;
             display: grid;
             gap: 15px;
-            grid-template-columns: repeat(1,290px);
+            grid-template-columns: repeat(1,minmax(100px,290px));
             grid-auto-rows: minmax(100px, auto);
             position: relative;
             
@@ -811,6 +834,8 @@ section .comments{
            /* background-color: #e2e2e275;*/
             box-shadow: 5px 5px #ececec;
             border-radius: 8px;
+            max-width: 250px;
+            margin: 0 auto;
             
         }
         .grid-image{
@@ -864,22 +889,24 @@ section .comments{
           
         }
         .testimonial-container{
-            margin-top: 0px;
-            flex-direction: column;
-            margin-bottom: 100px;
-            height: 150px;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            flex-direction: column;         
+            height: 95%;
         }
         .testimonial-container h2{
            border-top: 1px solid black;
-           padding-top: 20px;
+           padding-top: 10px;
+           font-size: 25px;
+           width: max-content;
+           text-transform: uppercase;
         }
         section .comments{
             position: relative;
             display: flex;
-            max-width: 300px;
-            min-width: 280px;
-            height: max-content;
-            flex: 1;
+            width: 75%;
+            height: 350px; 
             font-family: 'Maven Pro', sans-serif;
             font-size: 16px;
             text-align: center;
@@ -890,7 +917,7 @@ section .comments{
             top: 0;
             left: -300px;
             width: 100%;
-            height: 100%;
+            height: max-content;
             opacity: 0;
         }
         .comment.current{
