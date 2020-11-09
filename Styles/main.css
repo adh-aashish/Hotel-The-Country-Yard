@@ -53,10 +53,12 @@ a.nav-content{
     text-decoration: none;
     color:white ;
     border-radius: 5px;
+    transition: all 0.3s ease-in;
     
 }
 a.nav-content:link,a.nav-content:visited{
     color: white;
+    transition: all 0.4s ease-in;
 }
 a.nav-content:hover,a.nav-content:active{
     color: #c7934b;
@@ -187,8 +189,14 @@ a.book-now:hover,a.book-now:active{
 .home-grid{
     position: relative;
    /* background-color: #e2e2e275;*/
-    box-shadow: 5px 5px #ececec;
+    box-shadow: 0px 4px #ececec;
     border-radius: 8px;
+    transition: all 0.4s ease;
+
+}
+.home-grid:hover{
+    transform: translateY(-7px) ;
+    box-shadow: 0px 10px 10px 6px #ececec;
 }
 .grid-image{
     position: absolute;
@@ -371,10 +379,12 @@ section .comments{
         position: fixed;
         right: 5px;
         bottom: 5px;
+        transition: all 0.6s ease;
         
     }
     a.nav-content:link,a.nav-content:visited{
         color: white;
+        transition: all 0.6s ease;
     }
     a.nav-content:hover,a.nav-content:active{
         color: #c7934b;
@@ -491,11 +501,11 @@ section .comments{
       font-family: 'Maven Pro', sans-serif;
       text-align: center !important;
     }
-    .home-grid-container{
+    .home-grid-container{   
+        max-width:550px;
         margin: 0 auto;
-        max-width: 600px;
         display: grid;
-        gap: 15px;
+        gap: 30px;
         grid-template-columns: repeat(2,minmax(100px,290px));
         grid-auto-rows: minmax(100px, auto);
         position: relative;
@@ -506,7 +516,11 @@ section .comments{
        /* background-color: #e2e2e275;*/
         box-shadow: 5px 5px #ececec;
         border-radius: 8px;
-        
+        transition: all 0.4s ease;
+    }
+    .home-grid:hover{
+        transform: translateY(-7px) ;
+        box-shadow: 0px 10px 10px 6px #ececec;
     }
     .grid-image{
         position: absolute;
@@ -806,7 +820,7 @@ section .comments{
             
         }
         .welcome-heading{                      
-           font-size: 14px;
+           font-size: 25px;
            margin-bottom:10px;
            text-transform: uppercase;
            text-align: center !important;
@@ -815,15 +829,15 @@ section .comments{
           display: flex;
           width: 90%;
           margin: 0 auto;
-          font-size: 10px;
+          font-size: 14px;
           font-family: 'Maven Pro', sans-serif;
           text-align: center !important;
         }
         .home-grid-container{
             margin: 0 auto;
-            max-width: 300px;
+            max-width: max-content;
             display: grid;
-            gap: 15px;
+            gap: 40px;
             grid-template-columns: repeat(1,minmax(100px,290px));
             grid-auto-rows: minmax(100px, auto);
             position: relative;
@@ -834,7 +848,7 @@ section .comments{
            /* background-color: #e2e2e275;*/
             box-shadow: 5px 5px #ececec;
             border-radius: 8px;
-            max-width: 250px;
+            max-width: 90%;
             margin: 0 auto;
             
         }
@@ -932,6 +946,7 @@ section .comments{
             background-color: #212529;
             display: flex;
             flex-direction: column;
+            margin-bottom: 48px;
         }
         .icon{
             color: #c7934b;
@@ -940,12 +955,16 @@ section .comments{
         .footer-content{
             color: #fff;
             font-size: 12px;
-            display: inline-flex;
+            text-align: center;
+        }
+        .footer-content span{
+            margin-right: 25px;
         }
         .footerfinal{
             position: absolute;
             bottom: 10px;
             color: #fff;
+            text-align: center;
         
         }
         

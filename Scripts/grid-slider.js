@@ -1,6 +1,6 @@
 const comments = document.querySelectorAll('.comment');
 const autoGrid = true;
-const intervalTimeGrid = 9000;
+const intervalTimeGrid = 25000;
 let slideIntervalGrid;
 
 const nextSlideGrid = ()=>{
